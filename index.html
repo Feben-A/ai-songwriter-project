@@ -4,20 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Songwriter</title>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <body>
-    <h1>AI Songwriter</h1>
+  <body class="container">
+    <h1>AI Songwriter 📝</h1>
 
     <form>
-      <input type="text" name="" id="" />
-      <input type="submit" name="" id="" placeholder="Search" />
+      <input
+        type="text"
+        name=""
+        id="user-input"
+        placeholder="Enter a theme for a song"
+      />
+      <input type="submit" name="Search" id="search-input" value="search" />
     </form>
 
-    <div class="generated-lyrics">Lyrics</div>
+    <div class="generated-lyrics" id="generated-lyrics">Lyrics</div>
 
     <footer>
-      This AI project was coded by Feben A open-sourced on Github and is hosted
-      on Netlify
+      This AI songwriter was coded by Feben A
+      <a href="#" target="_blank">open-sourced on Github</a> and is
+      <a href="#" target="_blank">hosted on Netlify</a>
     </footer>
+
+    <script src="src/app.js"></script>
   </body>
 </html>
