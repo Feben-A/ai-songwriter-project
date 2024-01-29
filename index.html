@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Songwriter</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body class="container">
     <h1>AI Songwriter 📝</h1>
@@ -14,12 +16,14 @@
         type="text"
         name=""
         id="user-input"
-        placeholder="Enter a theme for a song"
+        placeholder="Enter a theme for a song. e.g. tainted love, growing up..."
+        autofocus
+        required
       />
       <input type="submit" name="Search" id="search-input" value="search" />
     </form>
 
-    <div class="generated-lyrics" id="generated-lyrics">Lyrics</div>
+    <div class="generated-lyrics hidden" id="generated-lyrics">Lyrics</div>
 
     <footer>
       This AI songwriter was coded by Feben A

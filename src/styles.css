@@ -40,8 +40,17 @@ background-color: rgba(0,0,0,0.2);
     
 }
 
+.hidden {
+    display: none;
+}
+
 a {
     color: purple;
+}
+
+footer {
+    margin: 30px;
+    font-size: 15px;
 }
 
 
