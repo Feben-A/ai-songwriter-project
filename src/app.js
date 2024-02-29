@@ -18,7 +18,7 @@ function generateLyrics (event) {
     let songIdea = userInputElement.value;
 
     let apiKey = "f230a97a4f6f4577t418b7603o2e6fb5";
-    let context = 'you are an experienced RnB songwriter. Write the title at the top and just write the first verse and chorus not the whole song. Please seperate the title, verse and chorus into HTML formats <p></p>. Please leave space between each line.';
+    let context = 'you are an experienced RnB songwriter. Write the title at the top and just write the first verse and chorus not the whole song. Please seperate the title, verse and chorus into HTML formats <p></p>. Please leave space </br> between each line.';
     let prompt =`write lyrics for a song about ${songIdea}`
     
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
